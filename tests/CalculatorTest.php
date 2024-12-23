@@ -24,5 +24,10 @@ class CalculatorTest extends TestCase
         $result = $calculator->multiply(3,6);
         $this->assertEquals(18,$result);
     }
+    public function testDivision(){
+        $calculator = new Calculator();
+        $result = $calculator->divide(20,4);
+        $this->assertEquals(5,$result);
+    }
 
 }
