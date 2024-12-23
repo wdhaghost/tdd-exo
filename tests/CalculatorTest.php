@@ -29,5 +29,10 @@ class CalculatorTest extends TestCase
         $result = $calculator->divide(20,4);
         $this->assertEquals(5,$result);
     }
+    public function testCant_Use_Zero_In_Division(){
+        $calculator = new Calculator();
+        $result = $calculator->divide(2,0);
+        $this->assertSame(['message'=>'Can\'t use 0'],$result);
+    }
 
 }
