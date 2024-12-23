@@ -8,4 +8,9 @@ class PrimeCheckerTest extends TestCase{
         $result = $primeChecker->isPrime(2);
         $this->assertTrue($result);
     }
+    public function test_If_4_is_not_prime(){
+        $primeChecker = new PrimeChecker();
+        $result = $primeChecker->isPrime(4);
+        $this->assertFalse($result);
+    }
 }
