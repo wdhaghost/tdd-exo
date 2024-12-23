@@ -14,4 +14,8 @@ Class Calculator{
     public function add($x,$y){
         return $x+$y;
     }
+
+    public function substract($x,$y){
+        return $x-$y;
+    }
 }
