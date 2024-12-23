@@ -2,6 +2,8 @@
 
 use PHPUnit\Framework\TestCase;
 
+use function PHPUnit\Framework\assertEquals;
+
 class CalculatorTest extends TestCase
 {
     public function testAddition(){
@@ -15,6 +17,12 @@ class CalculatorTest extends TestCase
         $calculator = new Calculator();
         $result = $calculator->substract(5,2);
         $this->assertEquals(3,$result);
+    }
+
+    public function testMultiplication(){
+        $calculator = new Calculator();
+        $result = $calculator->multiply(3,6);
+        $this->assertEquals(18,$result);
     }
 
 }
