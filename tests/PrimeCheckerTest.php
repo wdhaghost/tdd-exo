@@ -20,4 +20,10 @@ class PrimeCheckerTest extends TestCase{
         $result = $primeChecker->isPrime(17);
         $this->assertTrue($result);
     }
+
+    public function test_If_20_is_not_prime(){
+        $primeChecker = new PrimeChecker();
+        $result = $primeChecker->isPrime(20);
+        $this->assertFalse($result);
+    }
 }
