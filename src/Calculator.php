@@ -23,6 +23,9 @@ Class Calculator{
         return $x*$y;
     }
     public function divide($x,$y){
+        if($x==0||$y==0){
+            return ['message'=>'Can\'t use 0'];
+        }
         return $x/$y;
     }
 }
