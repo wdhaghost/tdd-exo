@@ -18,4 +18,8 @@ Class Calculator{
     public function substract($x,$y){
         return $x-$y;
     }
+
+    public function multiply($x,$y){
+        return $x*$y;
+    }
 }
