@@ -10,4 +10,8 @@
 
 // Écrivez un test pour chaque fonctionnalité.
 // Implémentez chaque méthode dans la classe Calculator pour faire passer les tests.
-
+Class Calculator{
+    public function add($x,$y){
+        return $x+$y;
+    }
+}
