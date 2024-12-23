@@ -11,4 +11,10 @@ class CalculatorTest extends TestCase
 
     }
 
+    public function testSubstraction(){
+        $calculator = new Calculator();
+        $result = $calculator->substract(5,2);
+        $this->assertEquals(3,$result);
+    }
+
 }
