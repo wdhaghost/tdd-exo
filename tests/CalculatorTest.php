@@ -2,8 +2,6 @@
 
 use PHPUnit\Framework\TestCase;
 
-use function PHPUnit\Framework\assertEquals;
-
 class CalculatorTest extends TestCase
 {
     public function testAddition(){
